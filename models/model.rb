@@ -16,22 +16,3 @@ class YelpSearch
     Yelp.client.search(location, { term: search_term })
   end
 end
-
-
-searcher = YelpSearch.new
-response = searcher.search('Financial District, New York, NY', 'food')
-puts response.businesses.first.name
-puts response.businesses.first.rating
-puts response.businesses.first.rating_img_url
-puts response.businesses.first.rating_img_url_small
-puts response.businesses.first.url
-puts response.businesses.first.image_url
-puts response.businesses.first.display_phone
-puts response.businesses.first.location.display_address
-
-
-
-
-
-
-

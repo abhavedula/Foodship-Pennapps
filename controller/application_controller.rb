@@ -8,6 +8,8 @@ require "json"
 class ApplicationController < Sinatra::Base
   
   get "/" do
+    searcher = YelpSearch.new
+    @response = searcher.search('Financial District, New York, NY', 'food')
     erb :index
   end
   
