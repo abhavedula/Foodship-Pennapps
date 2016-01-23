@@ -61,6 +61,8 @@ GEM
       sinatra (>= 1.2.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    yelp (1.0.0)
+      json (>= 1.1.1)
 
 PLATFORMS
   ruby
@@ -75,6 +77,7 @@ DEPENDENCIES
   sinatra-activerecord
   sqlite3
   tux
+  yelp
 
 BUNDLED WITH
    1.10.5

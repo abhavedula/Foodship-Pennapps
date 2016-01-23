@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <%=@response.businesses.first.name%>
+    
+    
+    
+  <form action="/restaurant_location" method="POST">
+  <input type="text" name="location" placeholder="Location" class="form-control"><br><br>
+  
+  <input type="Submit" value="Submit" class="btn btn-primary">
+  
+</form>
+  </body>
+</html>
