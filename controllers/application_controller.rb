@@ -1,13 +1,15 @@
 require_relative "../config/environment"
-require_relative "../models/user"
-require_relative "../models/item"
+require_relative "../models/model"
+
 
 class ApplicationController < Sinatra::Base
   
-  enable :sessions
-  set :session_secret, 'this is a cookie secret'
+  get "/" do
+    searcher = YelpSearch.new
+    @response = searcher.search('Financial District, New York, NY', 'food')
+    erb :index
+  end
   
-  set :views, "views"
-  set :public_folder, "public"
+ 
 
 end

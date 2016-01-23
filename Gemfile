@@ -10,7 +10,6 @@ gem "bcrypt"
 
 gem 'yelp'
 
-
 group :development do
   gem "pry"
   gem "shotgun"
