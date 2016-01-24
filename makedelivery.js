@@ -20,11 +20,13 @@ function getDeliveryQuote(pickup_address, dropoff_address){
 	xhr.setRequestHeader("postman-token", "93863015-8f9c-6a42-dbde-4a9fc6cf1b79");
 
 	xhr.send(data);
+
+	return quote_id = JSON.parse(xhr.responseText).quote_id;
 }
 
 function createDelivery(pickup_address, pickup_name, pickup_phone_number, dropoff_address, dropoff_name, dropoff_phone_number, manifest, quote_id){
 	var data = new FormData();
-	data.append("pickup_address", pickup_address);
+	data.append("pickup_address", pickup_address);				// company's address
 	data.append("pickup_phone_number", pickup_phone_number);
 	data.append("pickup_name", pickup_name);
 	data.append("dropoff_address", dropoff_address);

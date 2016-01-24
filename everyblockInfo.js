@@ -6,6 +6,6 @@ function getInfo(text) {
               var schema = "business%20reviews";
 
               var endpoint = "https://api.everyblock.com/content/" + "?token=";
-	xhr.open("GET", endpoint + token + "&metro=" + metro + "&schema=" + schema"; false);
+	xhr.open("GET", endpoint + token + "&metro=" + metro + "&schema=" + schema; false);
 	xhr.send();
 }
